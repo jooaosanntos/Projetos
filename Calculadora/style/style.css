@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#container{
+    margin: 10vh auto;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    background-color: #ffba00;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: black 0px 0px 20px;
+}
+
+#modalAlerta{
+    width: 600px;
+    position: absolute;
+    background-color: #ffba00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    display: none;
+}
+
+#modalAlerta #cabecalhoAlerta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+#modalAlerta #cabecalhoAlerta #iconeX{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;    
+}
+
+#modalAlerta #cabecalhoAlerta h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+#modalAlerta #textoWrapperAlerta{
+    flex-grow: 1;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+#container #display{
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 25px;
+    text-align: right;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+#container #buttons{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#container #buttons button{
+    margin: 5px;
+    width: 80px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}

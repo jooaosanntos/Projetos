@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(48deg 98% 49%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+body .title-wrapper{
+    background-color: #0f0e0b;
+    color: hsl(48deg 98% 49%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 650px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 3px #0f0e0b;
+}
+
+body .task-element{
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #fff09d;
+    box-shadow: 0px 0px 3px #0f0e0b;
+}
+
+body .task-element div{
+    width: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    background-color: transparent;
+    border: none;
+    height: 60px;
+}
+
+body .task-element .task-text, input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+body .task-element input::placeholder{
+    font-size: 1rem;
+    color: #0f0e0b;
+    font-weight: bold;
+}
+
+body .container-tasks .task input[type=checkbox], button{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+body .container-tasks .task-element{
+    background-color: transparent;
+    cursor: pointer;
+}

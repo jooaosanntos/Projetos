@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="modalAlerta">
+        <div id="cabecalhoAlerta">
+            <h2>Erro econtrado</h2>
+            <div id="iconeX">X</div>
+        </div>
+        <div id="textoWrapperAlerta">
+            Erro nos parenteses
+        </div>
+    </div>
+    <div id="container">
+        <div id="display"></div>
+        <div id="buttons">
+            <button id="limparAtual">L</button>
+            <button class="parentese">(</button>
+            <button class="parentese">)</button>
+            <button class="sinal">/</button>
+            <button class="numero" value="7">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="sinal">*</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="sinal">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="sinal">+</button>
+            <button id="limparDisplay">C</button>
+            <button class="numero">0</button>
+            <button class="sinal">.</button>
+            <button id="calcular">=</button>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>
