@@ -8,7 +8,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Projetos</title>
     <style>
-        [all-buttons]{
+        [all-buttons] {
             width: 15rem;
             padding: 1rem 0;
         }
@@ -30,17 +30,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="me-auto"></div>
-                <form class="d-flex mb-lg-0">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <div class="d-flex mb-lg-0">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="d-flex justify-content-center mt-5">
-        <ul class="list-group container">
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+        <ul class="list-group container" id="list">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-0">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#Flappybatman" role="button"
                         aria-expanded="false" aria-controls="Flappybatman">
@@ -50,11 +50,12 @@
                 <div class="collapse" id="Flappybatman">
                     <div class="card card-body text-center">
                         <a href="./Flappybatman/index.html">Flappybatman</a>
-                        Um jogo no estilo FlappyBird construído com OO com uma dinâmica interessante, música, pontuação e um personagem diferente: o batman
+                        Um jogo no estilo FlappyBird construído com OO com uma dinâmica interessante, música, pontuação
+                        e um personagem diferente: o batman
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-1">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#SPA-Portifolio" role="button"
                         aria-expanded="false" aria-controls="SPA-Portifolio">
@@ -64,11 +65,12 @@
                 <div class="collapse" id="SPA-Portifolio">
                     <div class="card card-body text-center">
                         <a href="./SPA_Portifolio/index.html">SPA-Portifólio</a>
-                        Uma Single Page Aplication que simula um portifólio de desenvolvedor web. Além de um layout interessante, essa apliação possui uma resposividade improvisada
+                        Uma Single Page Aplication que simula um portifólio de desenvolvedor web. Além de um layout
+                        interessante, essa apliação possui uma resposividade improvisada
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-2">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#todoList" role="button"
                         aria-expanded="false" aria-controls="todoList">
@@ -78,11 +80,13 @@
                 <div class="collapse" id="todoList">
                     <div class="card card-body text-center">
                         <a href="./TodoList/index.html">TodoList</a>
-                        (Ainda em desenvolvimento)Uma versão de TodoList mais interativa que utiliza Jquery. Nela você adiciona tarefas, arrasta sua tarefas para a seção de concluídas e exclui tarefas arrastando elas para alguma lateral do site
+                        (Ainda em desenvolvimento)Uma versão de TodoList mais interativa que utiliza Jquery. Nela você
+                        adiciona tarefas, arrasta sua tarefas para a seção de concluídas e exclui tarefas arrastando
+                        elas para alguma lateral do site
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-3">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#drumkit" role="button"
                         aria-expanded="false" aria-controls="drumkit">
@@ -92,11 +96,12 @@
                 <div class="collapse" id="drumkit">
                     <div class="card card-body text-center">
                         <a href="./Drumkit/index.html">Drumkit</a>
-                        Um Drumkit que possui interações a partir do pressionamento de teclas: diferentes sons, cores e mudança de tamanho
+                        Um Drumkit que possui interações a partir do pressionamento de teclas: diferentes sons, cores e
+                        mudança de tamanho
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-4">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#todo-list" role="button"
                         aria-expanded="false" aria-controls="todo-list">
@@ -106,11 +111,12 @@
                 <div class="collapse" id="todo-list">
                     <div class="card card-body text-center">
                         <a href="./Todo-list/index.html">Todo-list</a>
-                        Uma Todo-list em que você pode adicionar sua tarefas diárias e marcá-las como concluídas. Por usar o localStorage, essa aplicação salva suas tarefas no seu browser
+                        Uma Todo-list em que você pode adicionar sua tarefas diárias e marcá-las como concluídas. Por
+                        usar o localStorage, essa aplicação salva suas tarefas no seu browser
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-5">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#calculadora" role="button"
                         aria-expanded="false" aria-controls="calculadora">
@@ -124,7 +130,7 @@
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-6">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#slide" role="button"
                         aria-expanded="false" aria-controls="slide">
@@ -134,11 +140,12 @@
                 <div class="collapse" id="slide">
                     <div class="card card-body text-center">
                         <a href="./Slide/index.html">Slide</a>
-                        Um slide de imagens. As imagens incialmente passam de forma automática. Caso você inicie a passagem manual, a passagem  automática só reiniciará após algum tempo
+                        Um slide de imagens. As imagens incialmente passam de forma automática. Caso você inicie a
+                        passagem manual, a passagem automática só reiniciará após algum tempo
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-7">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#calculadora-imc" role="button"
                         aria-expanded="false" aria-controls="calculadora-imc">
@@ -152,7 +159,7 @@
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-8">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button"
                         aria-expanded="false" aria-controls="collapseExample">
@@ -166,7 +173,7 @@
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-9">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#lampada" role="button"
                         aria-expanded="false" aria-controls="lampada">
@@ -176,11 +183,12 @@
                 <div class="collapse" id="lampada">
                     <div class="card card-body text-center">
                         <a href="./Lampada/index.html">Lâmpada</a>
-                        Uma aplicativo simples que brinca com a troca de imagens para simular uma lâmpada. Cuidado para não quebrá-la...
+                        Uma aplicativo simples que brinca com a troca de imagens para simular uma lâmpada. Cuidado para
+                        não quebrá-la...
                     </div>
                 </div>
             </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center">
+            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-10">
                 <p>
                     <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#semaforo" role="button"
                         aria-expanded="false" aria-controls="semaforo">
@@ -196,6 +204,54 @@
             </li>
         </ul>
     </div>
+    <script src="./jquery.js"></script>
+    <script>
+        /*
+        * Função que verifica se uma string contém outra e vise-versa. Em caso afirmativo, o retorno é true; em caso negativo,
+        * o retorno é false.
+        */
+        function isSubstring(word1, word2) {
+            const maior = word1.length > word2.length ? word1 : word2
+            const menor = word1.length > word2.length ? word2 : word1
+
+            for (i = 0; i < maior.length - menor.length + 1; i++) {
+                if (menor[0] == maior[i]) {
+                    if (maior.substring(i, i + menor.length) == menor) {
+                        return true
+                    }
+                }
+            }
+
+            return false
+        }
+
+
+        const itens = document.querySelectorAll("#list li") // Salvando itens inciais em uma variável
+
+        /*
+        * Trecho de código responsável por filtrar os itens
+        */
+        $("#search").keyup(event => {
+            event.preventDefault()
+
+            const input = $(event.target)
+
+            if (input.val().trim() == ""){
+                $("#list").append(itens)
+            } else {
+                $("#list").html("")
+
+                const expectedText = input.val().toLowerCase()
+                $(itens).each((index, item) => {
+                    // Pegando texto do parágrafo associado ao item corrente
+                    const text = $(item).children().first().children().first().text().trim().toLowerCase()
+                    if (isSubstring(text, expectedText)) {
+                        $("#list").append(item)
+                    }
+                })
+            }
+        })
+    </script>
 </body>
 
 </html>
