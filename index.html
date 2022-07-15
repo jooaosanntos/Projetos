@@ -32,7 +32,6 @@
                 <div class="me-auto"></div>
                 <div class="d-flex mb-lg-0">
                     <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </div>
             </div>
         </div>
@@ -224,23 +223,16 @@
 
             return false
         }
-
-
-        const itens = document.querySelectorAll("#list li") // Salvando itens inciais em uma variável
-
+        
         /*
         * Trecho de código responsável por filtrar os itens
         */
-        $("#search").keyup(event => {
-            event.preventDefault()
-
-            const input = $(event.target)
-
+        function filterItems(input, itens){
             if (input.val().trim() == ""){
                 $("#list").append(itens)
             } else {
                 $("#list").html("")
-
+                
                 const expectedText = input.val().toLowerCase()
                 $(itens).each((index, item) => {
                     // Pegando texto do parágrafo associado ao item corrente
@@ -250,7 +242,18 @@
                     }
                 })
             }
+        }
+        
+        const itens = document.querySelectorAll("#list li") // Salvando itens inciais em uma variável
+        
+        $("#search").keyup(event => {
+            event.preventDefault()
+
+            const input = $(event.target)
+
+            filterItems(input, itens)
         })
+        
     </script>
 </body>
 
