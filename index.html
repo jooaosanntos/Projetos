@@ -1,260 +1,45 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Projetos</title>
-    <style>
-        [all-buttons] {
-            width: 15rem;
-            padding: 1rem 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./style/index.css">
+    <title>TodoList</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Projetos</a>
-            <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="me-auto"></div>
-                <div class="d-flex mb-lg-0">
-                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </div>
-            </div>
+    <h1 class="main-title">
+        Liste suas tarefas!
+    </h1>
+    <div class="dropzone trash trash-left"></div>
+    <div class="container">
+        <div class="container-child container-left dropzone">
+            <span class="container-legend">Pendentes</span>
         </div>
-    </nav>
-
-    <div class="d-flex justify-content-center mt-5">
-        <ul class="list-group container" id="list">
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-0">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#Flappybatman" role="button"
-                        aria-expanded="false" aria-controls="Flappybatman">
-                        Flappybatman
-                    </a>
-                </p>
-                <div class="collapse" id="Flappybatman">
-                    <div class="card card-body text-center">
-                        <a href="./Flappybatman/index.html">Flappybatman</a>
-                        Um jogo no estilo FlappyBird construído com OO com uma dinâmica interessante, música, pontuação
-                        e um personagem diferente: o batman
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-1">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#SPA-Portifolio" role="button"
-                        aria-expanded="false" aria-controls="SPA-Portifolio">
-                        SPA-Portifólio
-                    </a>
-                </p>
-                <div class="collapse" id="SPA-Portifolio">
-                    <div class="card card-body text-center">
-                        <a href="./SPA_Portifolio/index.html">SPA-Portifólio</a>
-                        Uma Single Page Aplication que simula um portifólio de desenvolvedor web. Além de um layout
-                        interessante, essa apliação possui uma resposividade improvisada
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-2">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#todoList" role="button"
-                        aria-expanded="false" aria-controls="todoList">
-                        TodoList
-                    </a>
-                </p>
-                <div class="collapse" id="todoList">
-                    <div class="card card-body text-center">
-                        <a href="./TodoList/index.html">TodoList</a>
-                        (Ainda em desenvolvimento)Uma versão de TodoList mais interativa que utiliza Jquery. Nela você
-                        adiciona tarefas, arrasta sua tarefas para a seção de concluídas e exclui tarefas arrastando
-                        elas para alguma lateral do site
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-3">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#drumkit" role="button"
-                        aria-expanded="false" aria-controls="drumkit">
-                        Drumkit
-                    </a>
-                </p>
-                <div class="collapse" id="drumkit">
-                    <div class="card card-body text-center">
-                        <a href="./Drumkit/index.html">Drumkit</a>
-                        Um Drumkit que possui interações a partir do pressionamento de teclas: diferentes sons, cores e
-                        mudança de tamanho
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-4">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#todo-list" role="button"
-                        aria-expanded="false" aria-controls="todo-list">
-                        Todo-list
-                    </a>
-                </p>
-                <div class="collapse" id="todo-list">
-                    <div class="card card-body text-center">
-                        <a href="./Todo-list/index.html">Todo-list</a>
-                        Uma Todo-list em que você pode adicionar sua tarefas diárias e marcá-las como concluídas. Por
-                        usar o localStorage, essa aplicação salva suas tarefas no seu browser
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-5">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#calculadora" role="button"
-                        aria-expanded="false" aria-controls="calculadora">
-                        Calculadora
-                    </a>
-                </p>
-                <div class="collapse" id="calculadora">
-                    <div class="card card-body text-center">
-                        <a href="./Calculadora/index.html">Calculadora</a>
-                        Uma calculadora com diversas operações disponíveis
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-6">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#slide" role="button"
-                        aria-expanded="false" aria-controls="slide">
-                        Slide
-                    </a>
-                </p>
-                <div class="collapse" id="slide">
-                    <div class="card card-body text-center">
-                        <a href="./Slide/index.html">Slide</a>
-                        Um slide de imagens. As imagens incialmente passam de forma automática. Caso você inicie a
-                        passagem manual, a passagem automática só reiniciará após algum tempo
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-7">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#calculadora-imc" role="button"
-                        aria-expanded="false" aria-controls="calculadora-imc">
-                        Calculadora-IMC
-                    </a>
-                </p>
-                <div class="collapse" id="calculadora-imc">
-                    <div class="card card-body text-center">
-                        <a href="./Calculadora-IMC/index.html">Calculadora-IMC</a>
-                        Calcule seu IMC a partir do seu peso e altura e descubra sua classificação a partir do resultado
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-8">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Countdown
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body text-center">
-                        <a href="./Countdown/index.html">Countdown</a>
-                        Um Countdown que mostra o tempo estimado até um evento começar
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-9">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#lampada" role="button"
-                        aria-expanded="false" aria-controls="lampada">
-                        Lâmpada
-                    </a>
-                </p>
-                <div class="collapse" id="lampada">
-                    <div class="card card-body text-center">
-                        <a href="./Lampada/index.html">Lâmpada</a>
-                        Uma aplicativo simples que brinca com a troca de imagens para simular uma lâmpada. Cuidado para
-                        não quebrá-la...
-                    </div>
-                </div>
-            </li>
-            <li class="py-4 list-group-item d-flex flex-column align-items-center" id="item-10">
-                <p>
-                    <a all-buttons class="btn btn-dark" data-bs-toggle="collapse" href="#semaforo" role="button"
-                        aria-expanded="false" aria-controls="semaforo">
-                        Semáforo
-                    </a>
-                </p>
-                <div class="collapse" id="semaforo">
-                    <div class="card card-body text-center">
-                        <a href="./Semaforo/index.html">Semáforo</a>
-                        Um semáforo de trânsito que utiliza a alternância de imagens para construir uma animação
-                    </div>
-                </div>
-            </li>
-        </ul>
+        <div class="container-child container-right dropzone">
+            <span class="container-legend">Concluídas</span>
+        </div>
     </div>
-    <script src="./jquery.js"></script>
-    <script>
-        /*
-        * Função que verifica se uma string contém outra e vise-versa. Em caso afirmativo, o retorno é true; em caso negativo,
-        * o retorno é false.
-        */
-        function isSubstring(word1, word2) {
-            const maior = word1.length > word2.length ? word1 : word2
-            const menor = word1.length > word2.length ? word2 : word1
-
-            for (i = 0; i < maior.length - menor.length + 1; i++) {
-                if (menor[0] == maior[i]) {
-                    if (maior.substring(i, i + menor.length) == menor) {
-                        return true
-                    }
-                }
-            }
-
-            return false
-        }
-        
-        /*
-        * Trecho de código responsável por filtrar os itens
-        */
-        function filterItems(input, itens){
-            if (input.val().trim() == ""){
-                $("#list").append(itens)
-            } else {
-                $("#list").html("")
-                
-                const expectedText = input.val().toLowerCase()
-                $(itens).each((index, item) => {
-                    // Pegando texto do parágrafo associado ao item corrente
-                    const text = $(item).children().first().children().first().text().trim().toLowerCase()
-                    if (isSubstring(text, expectedText)) {
-                        $("#list").append(item)
-                    }
-                })
-            }
-        }
-        
-        const itens = document.querySelectorAll("#list li") // Salvando itens inciais em uma variável
-        
-        $("#search").keyup(event => {
-            event.preventDefault()
-
-            const input = $(event.target)
-
-            filterItems(input, itens)
-        })
-        
-    </script>
+    <div class="dropzone trash trash-right"></div>
+    <div class="adicionar-task-wrapper">
+        <button id="adicionar-task">Adicionar Task</button>
+    </div>
+    <div class="menu-task">
+        <div class="menu-task-header">
+            <span></span>
+            <h3>Adione sua task</h3>
+            <span title="fechar" id="close-menu-task">X</span>
+        </div>
+        <form>
+            <input type="text" placeholder="título" id="titulo-task">
+            <textarea cols="20" rows="1" placeholder="conteúdo" id="conteudo-task"></textarea>
+            <button id="menu-task-adicionar">Adicionar</button>
+        </form>
+    </div>
+    <script src="./script/jquery.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
